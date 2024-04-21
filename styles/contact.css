@@ -1,0 +1,99 @@
+.box_contact {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 104px;
+}
+
+.contact_phone, .contact_mail {
+    width: calc(50% - 52px);
+}
+.number:before, .mail:before {
+    content: '';
+    display: block;
+    margin-bottom: 26px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+
+.number:before {
+    width: 13px;
+    height: 22px;
+    background-image: url(../resourses/phone.png);
+}
+
+.number {
+    font-size: 60px;
+    line-height: 60px;
+    text-decoration: none;
+    color: #121212;
+}
+
+.mail {
+    color: #121212;
+    font-size: 60px;
+    line-height: 60px;
+    opacity: 0.5;
+    text-decoration: none;
+    border-bottom: 2px solid rgba(0,0,0,0.5);
+}
+
+.mail:before {
+    width: 20px;
+    height: 16px;
+    background-image: url(../resourses/letter.png);
+}
+
+@media (max-width: 1199px) {
+    .contact_phone, .contact_mail {
+        width: calc(50% - 30px);
+    }
+
+    .box_contact {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        gap: 60px;
+    }
+
+    .number {
+        font-size: 43px;
+    }
+    
+    .mail {
+        font-size: 43px;
+    }
+
+}
+
+@media (max-width: 767px) {
+    .contact_phone, .contact_mail {
+        width: 100%;
+    }
+    .box_contact {
+
+        row-gap: 58px;
+    }
+    
+    .number {
+        font-size: 35px;
+        line-height: 45.62px;
+    }
+    
+    .mail {
+        font-size: 35px;
+        line-height: 45.62px;
+    }
+    
+    .number:before {
+        width: 9.75px;
+        height: 16.5px;
+    }
+
+    .mail:before {
+        width: 15px;
+        height: 12px;
+    }
+}

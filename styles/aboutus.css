@@ -1,0 +1,43 @@
+.text {
+    width: 1048px;
+    margin-bottom: 30px;
+    color: #121212;
+    font-size: 45px;
+    font-weight: 400;
+    line-height: 61px;
+    text-align: left;
+}
+
+.servises {
+    display: inline-block;
+    padding: 20px 40px;
+    border-radius: 5px;
+    background-color: rgb(173, 24, 24);
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 27px;
+    font-weight: 400;
+}
+@media (max-width: 1199px) {
+    .text {
+        width: 690px;
+        font-size: 35px;
+        line-height: 48px;
+    }
+}
+
+@media (max-width: 767px) {
+    .text {
+        width: 100%;
+        font-size: 22px;
+        line-height: 30px;
+    }
+    .servises {
+        display: inline-block;
+        padding: 14.5px 28px;
+        border-radius: 3.8px;
+        font-size: 16px;
+        line-height: 22px;
+    }
+}
